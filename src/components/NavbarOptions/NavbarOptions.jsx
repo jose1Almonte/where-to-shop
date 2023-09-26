@@ -1,6 +1,5 @@
 import LinkComponent from '../LinkComponent/LinkComponent';
 import Styles from './NavbarOptions.module.css'
-import {Link} from 'react-router-dom';
 
 export default function NavbarOptions() {
   

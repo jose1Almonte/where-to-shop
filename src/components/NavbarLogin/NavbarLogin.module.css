@@ -1,0 +1,5 @@
+.loginOptions {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
