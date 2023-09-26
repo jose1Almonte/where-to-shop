@@ -1,0 +1,10 @@
+.unorderedList {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    /* gap: 50%; */
+    white-space: nowrap;
+    /* background-color: red; */
+    justify-content: center;
+    gap: 30%;
+}

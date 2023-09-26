@@ -1,10 +1,12 @@
+import Logo from '../Logo/Logo'
+import NavbarOptions from '../NavbarOptions/NavbarOptions'
 import Styles from './Navbar.module.css'
 
 export default function Navbar() {
   return (
     <div className={Styles.box}>
-        <p>Logo</p>
-        <p>Option1 Option2 Option3 Option4</p>
+        <Logo/>
+        <NavbarOptions/>
         <p>Login</p>
     </div>
   )
