@@ -1,0 +1,37 @@
+.carousel {
+    position: relative;
+}
+
+.imageDiv {
+
+    /* background-image: url(src/images/paloVerdeCaracas.jpg); */
+    width: 100%;
+    aspect-ratio: 2.07;
+    
+    /* background-size: cover; */
+    /* background-position: 50%; */
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    filter: blur(6px);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: 2.4vw;
+    filter: none;
+    cursor: pointer;
+    transition: all 0.45s ease;
+}
+
+.arrow:hover {
+    opacity: 0.5;
+}
+
+.left {
+    left: 2%;
+}
+
+.right {
+    right: 2%;
+}

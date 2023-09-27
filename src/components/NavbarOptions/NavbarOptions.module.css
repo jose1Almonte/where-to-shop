@@ -7,4 +7,14 @@
     /* background-color: red; */
     justify-content: center;
     gap: 30%;
+
+}
+
+.unorderedList span {
+    transition: all 0.45s ease;
+
+}
+
+.unorderedList :hover {
+    color: rgba(38, 38, 38, 0.5);
 }
