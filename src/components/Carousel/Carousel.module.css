@@ -1,5 +1,6 @@
 .carousel {
     position: relative;
+    width: 100%;
 }
 
 .caro {
@@ -13,7 +14,6 @@
 
     /* background-image: url(src/images/paloVerdeCaracas.jpg); */
     width: 100%;
-    
     aspect-ratio: 2.07;
     
     /* background-size: cover; */

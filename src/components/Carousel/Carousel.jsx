@@ -8,16 +8,8 @@ import TextCarousel from '../TextCarousel/TextCarousel';
 import CarouselOptions from '../CarouselOptions/CarouselOptions';
 
 const images = [
-    paloVerdeCaracas2,
     paloVerdeCaracas,
     paloVerdeCaracas2,
-    paloVerdeCaracas,
-    paloVerdeCaracas2,
-    paloVerdeCaracas,
-    paloVerdeCaracas2,
-    paloVerdeCaracas,
-    paloVerdeCaracas2,
-    paloVerdeCaracas,
 ]
 
 export default function Carousel() {
