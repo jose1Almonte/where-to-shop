@@ -2,17 +2,25 @@
     position: relative;
 }
 
+.caro {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2.07;
+
+}
+
 .imageDiv {
 
     /* background-image: url(src/images/paloVerdeCaracas.jpg); */
     width: 100%;
+    
     aspect-ratio: 2.07;
     
     /* background-size: cover; */
     /* background-position: 50%; */
 
     border: 1px solid rgba(0, 0, 0, 0.1);
-    filter: blur(6px);
+    filter: blur(2px);
 }
 
 .arrow {
@@ -22,6 +30,12 @@
     filter: none;
     cursor: pointer;
     transition: all 0.45s ease;
+
+    /* position: absolute; */
+    z-index: 999;
+    background-color: transparent;
+    border: transparent;
+    /* width: 50px; */
 }
 
 .arrow:hover {
@@ -29,9 +43,9 @@
 }
 
 .left {
-    left: 2%;
+    left: 0.5%;
 }
 
 .right {
-    right: 2%;
+    right: 0.5%;
 }

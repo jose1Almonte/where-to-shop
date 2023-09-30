@@ -1,37 +1,59 @@
-import {useState, useEffect} from 'react';
 import Styles from './Carousel.module.css'
-import leftArrow from '../../vectors/leftArrow.svg'
-import rightArrow from '../../vectors/rightArrow.svg'
 import paloVerdeCaracas from '../../images/paloVerdeCaracas.jpg'
 import paloVerdeCaracas2 from '../../images/paloVerdeCaracas2.jpeg'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel as Caro } from 'react-responsive-carousel';
+import { FaLessThan, FaGreaterThan } from 'react-icons/fa';
+import TextCarousel from '../TextCarousel/TextCarousel';
+import CarouselOptions from '../CarouselOptions/CarouselOptions';
 
 const images = [
+    paloVerdeCaracas2,
+    paloVerdeCaracas,
+    paloVerdeCaracas2,
+    paloVerdeCaracas,
+    paloVerdeCaracas2,
+    paloVerdeCaracas,
+    paloVerdeCaracas2,
+    paloVerdeCaracas,
     paloVerdeCaracas2,
     paloVerdeCaracas,
 ]
 
 export default function Carousel() {
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const goToPreviousSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-    };
-
-    const goToNextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    };
-
-    useEffect(() => {
-        console.log(currentIndex);
-    }, [currentIndex])
-
   return (
     <section className={Styles.carousel}>
-        {/* <div className={Styles.imageDiv}/> */}
-        <img src={images[currentIndex]} className={Styles.imageDiv}/>
-        <img src={leftArrow} onClick={() => {goToPreviousSlide()}} className={`${Styles.arrow} ${Styles.left}`}/>
-        <img src={rightArrow} onClick={() => {goToNextSlide()}} className={`${Styles.arrow} ${Styles.right}`}/>
-    </section>
+
+        <Caro 
+        className={Styles.caro}
+        infiniteLoop={true} 
+        swipeScrollTolerance={1} 
+        preventMovementUntilSwipeScrollTolerance={true} 
+        autoPlay={true} 
+        interval={5000} 
+        transitionTime={1000} 
+        showStatus={false} 
+        showIndicators={false}
+        showThumbs={false} 
+        renderArrowPrev={(clickHandler, hasPrev) => (
+            <button onClick={clickHandler} disabled={!hasPrev} className={`${Styles.arrow} ${Styles.left}`}>
+              <FaLessThan color='white' size={25}/>
+            </button>
+        )}
+        renderArrowNext={(clickHandler, hasPrev) => (
+          <button onClick={clickHandler} disabled={!hasPrev} className={`${Styles.arrow} ${Styles.right}`}>
+            <FaGreaterThan color='white' size={25}/>
+          </button>
+      )}
+        >
+        {images.map((image, index) => 
+            <img src={image} key={index}  className={Styles.imageDiv}/>
+        )}
+        </Caro>
+
+        <TextCarousel/>
+        <CarouselOptions/>
+        </section>
   )
 }
