@@ -1,10 +1,14 @@
 import Carousel from "../../components/Carousel/Carousel";
+import LocationSection from "../../components/LocationSection/LocationSection";
+import StoresSection from "../../components/StoresSection/StoresSection";
 
 export default function HomePage() {
   return (
     <>
     <Carousel/>
-    <div>HomePage</div>
+    <LocationSection/>
+    <StoresSection/>
+    {/* <div>HomePage</div> */}
     </>
   )
 }

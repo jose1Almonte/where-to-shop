@@ -1,0 +1,13 @@
+.container {
+    /* background-color: red; */
+    margin-top: calc(70% / 18);
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(src/images/paloVerdeCaracas2.jpeg);
+    background-size: 25%;
+    background-repeat: no-repeat;
+    background-position: 50% ;
+}
