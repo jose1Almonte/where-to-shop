@@ -21,3 +21,9 @@
     font-size: 22px;
     font-weight: 500;
 }
+
+.progressBarContainer {
+    background-color: lightblue;
+    height: 15px;
+    width: 100%;
+}
