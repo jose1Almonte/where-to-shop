@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.ratingText {
+    color: #1D1D1D;
+}
+
+.calification {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* background-color: red; */
+    min-width: 4.4vw;
+}
+
+.number {
+    color: #8A8A8A;
+    font-size: 1.4vw;
+}
+
+.star {
+    width: 2vw;
+}

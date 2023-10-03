@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    width: auto;
+    max-width: 40%;
+    padding: 3%;
+    background: var(--foundation-green-normal, #00A991);
+}
+
+.right {
+    background-color: transparent;
+    color: var(--foundation-green-normal, #00A991);
+}
+
+.right:hover {
+    opacity: 1;
+    background: var(--foundation-green-normal, #00A991);
+    /* box-shadow: 0px 0px 10px 0px black; */
+}
