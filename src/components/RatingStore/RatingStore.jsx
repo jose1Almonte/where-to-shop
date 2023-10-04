@@ -3,13 +3,13 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import RatingText from "../RatingText/RatingText";
 import PropTypes from 'prop-types';
 
-export default function RatingStore({number, maxNumber}) {
+export default function RatingStore({ maxNumber, cardStore}) {
     const windowWidth = window.innerWidth;
   return (
     <section>
-    <RatingText number={number}/>
+    <RatingText number={cardStore.rating}/>
     <ProgressBar 
-        completed={number}
+        completed={cardStore.rating}
         maxCompleted={maxNumber}
         borderRadius= {3}
         height={0.5*windowWidth/100}
@@ -24,6 +24,7 @@ export default function RatingStore({number, maxNumber}) {
 }
 
 RatingStore.propTypes = {
-    number: PropTypes.number.isRequired,
+    // number: PropTypes.number.isRequired,
     maxNumber: PropTypes.number.isRequired,
+    cardStore: PropTypes.object.isRequired,
 };

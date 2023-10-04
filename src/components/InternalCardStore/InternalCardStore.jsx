@@ -4,17 +4,17 @@ import Styles from './InternalCardStore.module.css'
 // import todoQueso from '../../images/todoQuesoFront.jpg'
 import PropTypes from 'prop-types';
 
-export default function InternalCardStore({number, maxNumber}) {
+export default function InternalCardStore({cardStore, maxNumber}) {
 
   return (
     <div className={Styles.container}>
       <section>
-        <div className={Styles.image} style={{backgroundImage: 'url(src/images/todoQuesoFront.jpg)'}}/>
-        <h2 className={Styles.title}>Food - All Cheese</h2>
+        <div className={Styles.image} style={{backgroundImage: cardStore.url}}/>
+        <h2 className={Styles.title}>{cardStore.text}</h2>
       </section>
         
         <section className={Styles.miniSection}>
-          <RatingStore number={number} maxNumber={maxNumber}/>
+          <RatingStore cardStore={cardStore} maxNumber={maxNumber}/>
           <OptionsStore/>
         </section>
     </div>
@@ -22,6 +22,7 @@ export default function InternalCardStore({number, maxNumber}) {
 }
 
 InternalCardStore.propTypes = {
+  cardStore: PropTypes.object.isRequired,
   number: PropTypes.number.isRequired,
   maxNumber: PropTypes.number.isRequired,
 };
