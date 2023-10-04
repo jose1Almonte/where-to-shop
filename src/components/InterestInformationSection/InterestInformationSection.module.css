@@ -1,0 +1,27 @@
+.container {
+    /* position: relative; */
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ellipseContainer {
+    display: flex;
+    align-items: center;
+
+    width: 60vw;
+    height: 11vw;
+    margin-top: 35vh;
+    /* background-color: red; */
+    /* border: 2px solid red; */
+}
+
+.ellipse {
+    width: 50.67%;
+}
+
+.title {
+    width: 49.5%;
+    margin-bottom: 10vh;
+}
