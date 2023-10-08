@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+.selectionBox {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    width: 50%;
+    /* background-color: green; */
+}
+
+.selection {
+    font-family: 'Vazirmatn', sans-serif;
+    /* text-align: center;
+    font-family: Vazirmatn; */
+    font-size: 1.4vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+
+
+    cursor: pointer;
+    transition: all 0.45s ease;
+}
+
+.selection:hover {
+    opacity: 0.7;
+}
