@@ -1,5 +1,6 @@
 import CardStore from "../CardStore/CardStore";
 import Styles from './CardStoresSection.module.css'
+import todoQueso from '../../images/todoQuesoFront.jpg'
 
 export default function CardStoresSection() {
   const numbers = {
@@ -9,7 +10,7 @@ export default function CardStoresSection() {
 
   const cardsStore = [
     {
-      url: 'url(src/images/todoQuesoFront.jpg)',
+      url: `url(${todoQueso})`,
       text: 'Food - All Cheese',
       rating: 2.5
     },

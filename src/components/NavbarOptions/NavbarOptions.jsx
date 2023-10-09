@@ -6,19 +6,19 @@ export default function NavbarOptions() {
     const options = [
         {
             option: 'PRODUCTS',
-            url: 'https://fonts.google.com/specimen/Poppins',
+            url: '',
         },
         {
             option: 'STORES',
-            url: 'https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/prop-types.md',
+            url: '',
         },
         {
             option: 'HOME',
-            url: 'https://www.youtube.com/',
+            url: '',
         },
         {
             option: 'MORE',
-            url: 'https://openai.com/blog/chatgpt',
+            url: '',
         },
     ]
   
