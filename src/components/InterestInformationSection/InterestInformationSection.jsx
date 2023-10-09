@@ -2,6 +2,7 @@
 import Styles from './InterestInformationSection.module.css'
 import ellipse from '../../vectors/ellipse.svg'
 import InformationOptions from '../InformationOptions/InformationOptions'
+import CollageImage from '../CollageImage/CollageImage'
 
 export default function InterestInformationSection() {
   return (
@@ -13,6 +14,7 @@ export default function InterestInformationSection() {
         
         <InformationOptions/>
         {/* <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' /> */}
+        <CollageImage/>
     </section>
   )
 }
