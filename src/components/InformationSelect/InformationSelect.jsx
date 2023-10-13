@@ -1,9 +1,8 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import Styles from './InformationSelect.module.css'
+import PropTypes from 'prop-types';
 
-
-export default function InformationSelect() {
-    const [selected, setSelected] = useState('Stores');
+export default function InformationSelect({selected, setSelected}) {
 
     const handleSelect = (value) => {
         console.log(value)
@@ -19,3 +18,8 @@ export default function InformationSelect() {
         </section>
     )
 }
+
+InformationSelect.propTypes = {
+    selected: PropTypes.string.isRequired,
+    setSelected: PropTypes.any.isRequired,
+  };

@@ -3,8 +3,10 @@ import Styles from './InterestInformationSection.module.css'
 import ellipse from '../../vectors/ellipse.svg'
 import InformationOptions from '../InformationOptions/InformationOptions'
 import CollageImage from '../CollageImage/CollageImage'
+import { useState } from 'react';
 
 export default function InterestInformationSection() {
+  const [selected, setSelected] = useState('Stores');
   return (
     <section className={Styles.container}>
         <div className={Styles.ellipseContainer}>
@@ -12,9 +14,9 @@ export default function InterestInformationSection() {
         </div>
         <h3 className={Styles.title}>{"Let's Find Some Interest Information!"}</h3>
         
-        <InformationOptions/>
+        <InformationOptions selected={selected} setSelected={setSelected}/>
         {/* <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' /> */}
-        <CollageImage/>
+        <CollageImage selected={selected}/>
     </section>
   )
 }
