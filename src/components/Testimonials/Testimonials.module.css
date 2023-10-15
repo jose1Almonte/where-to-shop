@@ -1,0 +1,18 @@
+.container {
+    /* position: relative; */
+    /* background-color: var(--foundation-green-light, #E6F6F4); */
+    background-image: url('../../vectors/testimonialsBackground.svg');
+    background-color: var(--foundation-green-light, #E6F6F4);
+    /* background-size: cover; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 2.1818;
+    position: relative;
+}
+
+.backGround {
+    /* position: absolute; */
+    width: 100%;
+    /* background: transparent; */
+}

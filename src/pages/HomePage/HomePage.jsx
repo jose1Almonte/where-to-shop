@@ -3,6 +3,7 @@ import ContactSection from "../../components/ContactSection/ContactSection";
 import InterestInformationSection from "../../components/InterestInformationSection/InterestInformationSection";
 import LocationSection from "../../components/LocationSection/LocationSection";
 import StoresSection from "../../components/StoresSection/StoresSection";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
     <StoresSection/>
     <ContactSection/>
     <InterestInformationSection/>
+    <Testimonials/>
     </>
   )
 }
