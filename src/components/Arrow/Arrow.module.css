@@ -1,0 +1,25 @@
+.container {
+    border-radius: 100px;
+    border: 1px solid var(--foundation-green-light-active, #B0E4DD);
+
+    width: 35px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.container:hover {
+    background: var(--foundation-green-dark, #007F6D);
+    /* filter: brightness(0) invert(1); */
+}
+
+.transition {
+    transition: all 0.45s ease;
+}
+
+/* .container :hover {
+    filter: brightness(0) invert(1);
+} */

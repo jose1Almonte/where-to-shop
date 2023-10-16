@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    aspect-ratio: 2.3;
+    /* border: 2px solid black; */
+
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: var(--foundation-green-light-active, #B0E4DD);
+    font-variant-numeric: stacked-fractions;
+    font-feature-settings: 'cv11' on, 'cv10' on, 'cv09' on, 'cv07' on, 'cv04' on, 'ss01' on, 'cv03' on, 'cv06' on, 'cv01' on;
+    /* Content/Subheading */
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+}
+
+.description {
+    filter: none;
+    color: var(--neutral-900, #0B0B0E);
+    /* font-variant-numeric: stacked-fractions; */
+    /* font-feature-settings: 'cv11' on, 'cv10' on, 'cv09' on, 'cv07' on, 'cv04' on, 'ss01' on, 'cv03' on, 'cv06' on, 'cv01' on; */
+    /* font-family: Vazirmatn; */
+    font-size: 24px;
+    /* font-style: normal; */
+    /* font-weight: 600; */
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.122px;
+}
