@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    aspect-ratio: 2.3;
+    /* border: 2px solid black; */
+
+    justify-content: space-between;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.25);
+
+    padding: 1.2vw;
+}
+
+.description {
+    color: var(--neutral-600, #3D3D48);
+    font-variant-numeric: stacked-fractions;
+    font-feature-settings: 'cv11' on, 'cv10' on, 'cv09' on, 'cv07' on, 'cv04' on, 'ss01' on, 'cv03' on, 'cv06' on, 'cv01' on;
+    font-family: Inter;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2vw;
+}
+
+.secondRow {
+    display: flex;
+    /* background-color: red; */
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 25%;
+    width: 80%;
+}
+
+.img {
+    height: 100%;
+    aspect-ratio: 1;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.userData {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.title {
+    color: var(--neutral-900, #0B0B0E);
+    font-family: 'Vazirmatn';
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.email {
+    color: var(--neutral-500, #595969);
+    font-family: Inter;
+    font-size: 0.7vw;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+}
