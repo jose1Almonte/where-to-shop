@@ -1,0 +1,33 @@
+.container {
+    height: 37.14%;
+    width: 100%;
+    border-top: 1px solid #1B212C;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.socialContainer {
+    height: 45%;
+    aspect-ratio: 1;
+    background-color: #1B212C;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: 0.45s all ease;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.socialContainer:hover{
+    opacity: 0.5;
+}
+
+.socialNetwork{
+    width: 70%;
+}

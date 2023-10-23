@@ -1,0 +1,25 @@
+.greenRow {
+    background: var(--foundation-green-dark, #007F6D);
+    width: 100%;
+    aspect-ratio: 25;
+}
+
+.container {
+    background: var(--foundation-green-darker, #003B33);
+    aspect-ratio: 3.1236;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    width: 77.78%;
+    height: 60.74%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+}
