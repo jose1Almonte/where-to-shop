@@ -4,6 +4,9 @@
     color: #fff;
     border: none;
     border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    
 }
 
 .button:hover{
