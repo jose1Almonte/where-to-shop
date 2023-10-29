@@ -1,0 +1,13 @@
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    /* background-color: red; */
+    aspect-ratio: 1.73;
+    border-radius: 24px;
+    border: 1vw solid var(--neutral-100, #F5F5F5);
+    
+    /* background-image: url(src/images/todoQuesoFront.jpg); */
+    background-size: cover;
+    z-index: 1;
+}
