@@ -1,0 +1,16 @@
+.container {
+    width: 70%;
+    aspect-ratio: 2.59;
+
+    background-color: #fff;
+
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.picture {
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

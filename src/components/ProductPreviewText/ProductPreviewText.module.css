@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@800&display=swap');
+
+.container {
+    flex: 1.13;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 75%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.workSans {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+}
+
+.titleColor {
+    color: #2E4049;
+}
+
+
+.priceAndOffer {
+    font-size: 1.01vw;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.description {
+    color: #727272;
+    font-size: 1.2vw;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+}
+
+.title {
+
+    font-family: 'Shippori Mincho', serif;
+    font-size: 1.96vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%; /* 30px */
+}
+
+.link {
+    text-decoration: none;
+    border-radius: 34px;
+    background: #2E4049;
+    width: fit-content;
+    padding: 3%;
+
+    transition: all 0.45s ease;
+}
+
+.link:hover {
+    opacity: 0.5;
+    filter: drop-shadow(0px 0px 3px #2E4049);
+}
+
+
+.buttonText {
+    color: #f5f5f5;
+}
