@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 export default function InformationSelect({selected, setSelected}) {
 
     const handleSelect = (value) => {
-        console.log(value)
         setSelected(value)
     }
 

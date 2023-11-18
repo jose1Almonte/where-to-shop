@@ -1,8 +1,13 @@
+import PropTypes from 'prop-types';
 
-export default function SignUp() {
+export default function SignUp({loginAction}) {
   return (
-    <button className={`${'button'}`}>
+    <button className={`${'button'}`} onClick={loginAction}>
         SIGN UP
     </button>
   )
 }
+
+SignUp.propTypes = {
+  loginAction: PropTypes.any.isRequired,
+};
