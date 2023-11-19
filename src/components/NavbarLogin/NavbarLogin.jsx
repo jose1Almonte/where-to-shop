@@ -6,7 +6,7 @@ import TryForFree from "../TryForFree/TryForFree";
 import Styles from './NavbarLogin.module.css';
 
 export default function NavbarLogin() {
-  const {user} = useUser()
+  const {user, isLoading} = useUser()
   
   const handleSignWithGoogle = async () => {
     await signInWithGoogle()
@@ -19,20 +19,27 @@ export default function NavbarLogin() {
 
   return (
     <ul className={Styles.loginOptions}>
-        {!user ? (
+        {!user && !isLoading && (
           <>
             <SignUp loginAction={() => {handleSignWithGoogle()}}/>
             <TryForFree loginAction={() => {handleSignWithGoogle()}}/>
           </>
-        ) : (
+        )}
+
+        {!!user && !isLoading && (
           <>
             <button className={`${'button'}`}>
               {user.name}
             </button>
             <Logout logoutAction={() => {handleLogout()}}/>
           </>
-        )
-        }
+        )}
+
+        {!!isLoading && (
+          <>
+          <p>Loading current user...</p>
+          </>
+        )}
     </ul>
   )
 }
