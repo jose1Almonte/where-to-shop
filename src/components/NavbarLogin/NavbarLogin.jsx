@@ -1,4 +1,5 @@
-import { useUser } from "../../contexts/UserContext";
+// import { useUser } from "../../contexts/UserContext";
+import { useUser } from "../../contexts/useUser";
 import { logout, signInWithGoogle } from "../../firebase/auth-service";
 import Logout from "../Logout/Logout";
 import SignUp from "../SignUp/SignUp.JSX";
@@ -7,7 +8,7 @@ import Styles from './NavbarLogin.module.css';
 
 export default function NavbarLogin() {
   const {user, isLoading} = useUser()
-  
+
   const handleSignWithGoogle = async () => {
     await signInWithGoogle()
   }
