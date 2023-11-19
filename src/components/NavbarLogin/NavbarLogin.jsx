@@ -5,9 +5,11 @@ import Logout from "../Logout/Logout";
 import SignUp from "../SignUp/SignUp.JSX";
 import TryForFree from "../TryForFree/TryForFree";
 import Styles from './NavbarLogin.module.css';
+import {useNavigate} from 'react-router-dom'
 
 export default function NavbarLogin() {
   const {user, isLoading} = useUser()
+  const navigate = useNavigate()
 
   const handleSignWithGoogle = async () => {
     await signInWithGoogle()
@@ -29,7 +31,7 @@ export default function NavbarLogin() {
 
         {!!user && !isLoading && (
           <>
-            <button className={`${'button'}`}>
+            <button className={`${'button'}`} onClick={() => {navigate('/profile')}}>
               {user.name}
             </button>
             <Logout logoutAction={() => {handleLogout()}}/>

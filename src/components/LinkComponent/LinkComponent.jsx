@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 export default function LinkComponent({children, url}) {
   return (
-    <Link className='noDecoration' to={url} target='_blank'>
+    <Link className='noDecoration' to={url}>
         {children}
     </Link>
   )
