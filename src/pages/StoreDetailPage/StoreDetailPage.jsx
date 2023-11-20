@@ -6,7 +6,7 @@ import StoreProducts from '../../components/StoreProducts/StoreProducts';
 export default function StoreDetailPage() {
   return (
     <div className={Styles.container}>
-      <StoreTitleAndDescription/>
+      <StoreTitleAndDescription showDescription={true}/>
       <StoreProducts/>
     </div>
   )

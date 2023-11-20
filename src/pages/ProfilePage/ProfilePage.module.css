@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+.subtitle {
+    color: var(--neutral-700, #393939);
+    text-align: center;
+    font-variant-numeric: stacked-fractions;
+    font-feature-settings: 'cv09' on, 'cv04' on, 'ss01' on, 'cv03' on, 'ss03' on, 'cv06' on;
+    font-family: Inter;
+    margin: 5%;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 50% */
+    letter-spacing: -0.18px;
+
+    
+}
