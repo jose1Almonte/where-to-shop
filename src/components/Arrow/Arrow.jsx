@@ -15,6 +15,6 @@ export default function Arrow({vector, onClick}) {
 }
 
 Arrow.propTypes = {
-    vector: PropTypes.any.isRequired,
-    onClick: PropTypes.any.isRequired,
-  };
+  vector: PropTypes.any.isRequired,
+  onClick: PropTypes.any.isRequired,
+};

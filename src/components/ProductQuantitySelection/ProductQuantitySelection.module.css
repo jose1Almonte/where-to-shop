@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    /* background-color: yellow; */
+    min-width: 30%;
+    min-height: 10%;
+    /* aspect-ratio: 6; */
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.value{
+    /* background-color: transparent; */
+    text-size-adjust:unset;
+    border: 0px solid transparent;
+    min-width: 3%;
+}

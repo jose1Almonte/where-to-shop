@@ -1,0 +1,27 @@
+.container {
+    background-color: red;
+    width: 29.7vw;
+    aspect-ratio: 0.98;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.userPost {
+    width: 70%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title {
+    color: #2E4049;
+    font-family: Vazirmatn;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%;
+}
