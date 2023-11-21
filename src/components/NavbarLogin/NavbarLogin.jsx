@@ -1,15 +1,17 @@
 // import { useUser } from "../../contexts/UserContext";
+import { useEffect } from "react";
 import { useUser } from "../../contexts/useUser";
 import { logout, signInWithGoogle } from "../../firebase/auth-service";
 import Logout from "../Logout/Logout";
 import SignUp from "../SignUp/SignUp.JSX";
 import TryForFree from "../TryForFree/TryForFree";
 import Styles from './NavbarLogin.module.css';
-import {useNavigate} from 'react-router-dom'
+import {useLocation, useNavigate} from 'react-router-dom'
 
 export default function NavbarLogin() {
   const {user, isLoading} = useUser()
   const navigate = useNavigate()
+  const location = useLocation()
 
   const handleSignWithGoogle = async () => {
     await signInWithGoogle()
@@ -19,6 +21,10 @@ export default function NavbarLogin() {
     console.log('saliendo...')
     await logout()
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <ul className={Styles.loginOptions}>
