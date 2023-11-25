@@ -1,19 +1,23 @@
 .container {
     display: flex;
-    /* background-color: yellow; */
     min-width: 30%;
+    max-width: 50%;
     min-height: 10%;
-    /* aspect-ratio: 6; */
-
+    max-height: 10%;
     justify-content: space-between;
     align-items: center;
-}
-
-.value{
-    /* background-color: transparent; */
-    border: 0px solid transparent;
-    /* height: 100%; */
-    width: 2vw;
-    aspect-ratio: 1;
-    text-align: center;
+    overflow: hidden;
+  }
+  
+.value {
+  border: 0px solid transparent;
+  height: 2vw;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.5vw;
+  margin: 0 0.5vw; /* Añade un margen de 3 píxeles a cada lado */
+  vertical-align: middle; /* Centra verticalmente */
+  box-sizing: content-box; /* Ajusta el modelo de caja a 'content-box' */
+  min-width: 3vw;
+  max-width: 10vw;
 }
