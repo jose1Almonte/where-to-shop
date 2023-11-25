@@ -11,7 +11,9 @@
 
 .value{
     /* background-color: transparent; */
-    text-size-adjust:unset;
     border: 0px solid transparent;
-    min-width: 3%;
+    /* height: 100%; */
+    width: 2vw;
+    aspect-ratio: 1;
+    text-align: center;
 }
