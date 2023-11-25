@@ -8,6 +8,7 @@ import Layout from './components/Layout/Layout';
 import StoreDetailPage from './pages/StoreDetailPage/StoreDetailPage';
 import ProfilePage from './pages/ProfilePage/ProfilePage.jsx';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute.jsx';
+import AddProductPage from './pages/AddProductPage/AddProductPage.jsx';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,12 +18,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route element = {<Layout/>}>
           <Route path='/' element = {<HomePage/>}/>
           <Route path='/store/:storeId' element = {<StoreDetailPage/>}/>
-          
-            <Route path='/profile' element = {
-              <PrivateRoute>
-                <ProfilePage/>
-              </PrivateRoute>
-            }/>
+          <Route path='/addProduct' element = {<AddProductPage/>}/>
+          <Route path='/profile' element = {
+            <PrivateRoute>
+              <ProfilePage/>
+            </PrivateRoute>
+          }/>
           
         </Route>
       </Routes>
